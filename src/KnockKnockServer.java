@@ -26,6 +26,7 @@ public class KnockKnockServer {
             out.println(outputLine);
 
             while ((inputLine = in.readLine()) != null) {
+                System.out.println("Client: " + inputLine);
                 outputLine = kkp.processInput(inputLine);
                 out.println(outputLine);
                 if (outputLine.equals("Bye."))
